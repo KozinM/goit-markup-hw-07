@@ -18,77 +18,76 @@
     <title>WebStudio - Студия дизайна/Portfolio</title>
   </head>
   <body>
-    <header class="header container header-container">
-      <!-- <div class="container header-container"> -->
-      <nav class="header navigation">
-        <a class="logo link header" href="/"
-          >Web<span class="header-logo">Studio</span></a
+    <header class="container header__container">
+      <nav class="navigation">
+        <a class="logo-link" href="/"
+          >Web<span class="logo-link__text">Studio</span></a
         >
-        <ul class="header navigation cards">
-          <li class="header navigation card">
-            <a class="nav-link link" href="index.html">Студия</a>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">Студия</a>
           </li>
-          <li class="header navigation card">
-            <a class="nav-link link current" href="portfolio.html">Портфолио</a>
+          <li class="navigation__item navigation__item--current">
+            <a class="navigation__link" href="portfolio.html">Портфолио</a>
           </li>
-          <li class="header navigation card">
-            <a class="nav-link link" href="">Контакты</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Контакты</a>
           </li>
         </ul>
       </nav>
-      <ul class="header contacts cards">
-        <li class="header contacts card">
-          <a class="contact-link" href="tel:+380961111111">
-            <svg class="contact-icon" width="10" height="16">
+      <ul class="contacts contacts--right">
+        <li class="contacts__item">
+          <a class="contacts__link" href="tel:+380961111111">
+            <svg class="contacts__icon" width="10" height="16">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
             +380 96 111 11 11</a
           >
         </li>
-        <li class="header contacts card">
-          <a class="contact-link" href="mailto:info@devstudio.com">
-            <svg class="contact-icon" width="16" height="12">
+        <li class="contacts__item contacts__item--last">
+          <a class="contacts__link" href="mailto:info@devstudio.com">
+            <svg class="contacts__icon" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com</a
           >
         </li>
       </ul>
-      <!-- </div> -->
+      
     </header>
     <main>
-      <section class="works section-works">
-        <div class="container">
-          <h1 hidden>Примеры работ</h1>
-          <ul class="works filters cards">
-            <li class="works filters card">
-              <button class="btn filter-btn" type="button">Все</button>
+      <section class="works">
+        <div class="container works__container">
+          <h1 class = "works__title" hidden>Примеры работ</h1>
+          <ul class="works-filters">
+            <li class="works-filters__item">
+              <button class="btn btn--filter" type="button">Все</button>
             </li>
-            <li class="works filters card">
-              <button class="btn filter-btn" type="button">Веб-сайты</button>
+            <li class="works-filters__item">
+              <button class="btn btn--filter" type="button">Веб-сайты</button>
             </li>
-            <li class="works filters card">
-              <button class="btn filter-btn" type="button">Приложения</button>
+            <li class="works-filters__item">
+              <button class="btn btn--filter" type="button">Приложения</button>
             </li>
-            <li class="works filters card">
-              <button class="btn filter-btn" type="button">Дизайн</button>
+            <li class="works-filters__item">
+              <button class="btn btn--filter" type="button">Дизайн</button>
             </li>
-            <li class="works filters card">
-              <button class="btn filter-btn" type="button">Маркетинг</button>
+            <li class="works-filters__item works-filters__item--last">
+              <button class="btn btn--filter" type="button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="works cards">
-            <li class="works card item">
-              <a class="works-card-link" href="">
-                <div class="work-card-thumb">
+          <ul class="info works__info">
+            <li class="info__card info__card--width info__card--bottom">
+              <a class="info__link" href="">
+                <div class="info__thumb">
                   <img
-                    class="works-card-image"
+                    class="info__image"
                     src="./images/imgtehnocrack.jpg"
                     alt=""
                     width="370"
                   />
-                  <div class="work-card-overlay">
-                    <p class="word-card-overlay-text">
+                  <div class="info__overlay">
+                    <p class="info__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -96,23 +95,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-border">
-                  <h2 class="tile-title">Технокряк</h2>
-                  <p class="works card text">Веб-сайт</p>
+                <div class="info__border">
+                  <h2 class="info__title works__title">Технокряк</h2>
+                  <p class="info__text works__text">Веб-сайт</p>
                 </div></a
               >
             </li>
-            <li class="works card item">
-              <a class="works-card-link" href="">
-                <div class="work-card-thumb">
+            <li class="info__card info__card--width info__card--bottom">
+              <a class="info__link" href="">
+                <div class="info__thumb">
                   <img
-                    class="works-card-image"
+                    class="info__image"
                     src="./images/imgbasketposter.jpg"
                     alt=""
                     width="370"
                   />
-                  <div class="work-card-overlay">
-                    <p class="word-card-overlay-text">
+                  <div class="info__overlay">
+                    <p class="info__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -120,23 +119,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-border">
-                  <h2 class="tile-title">Постер New Orlean vs Golden Star</h2>
-                  <p class="works card text">Дизайн</p>
+                <div class="info__border">
+                  <h2 class="info__title works__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="info__text works__text">Дизайн</p>
                 </div></a
               >
             </li>
-            <li class="works card item">
-              <a class="works-card-link" href="">
-                <div class="work-card-thumb">
+            <li class="info__card info__card--width info__card--bottom">
+              <a class="info__link" href="">
+                <div class="info__thumb">
                   <img
-                    class="works-card-image"
+                    class="info__image"
                     src="./images/imgseafoodrest.jpg"
                     alt=""
                     width="370"
                   />
-                  <div class="work-card-overlay">
-                    <p class="word-card-overlay-text">
+                  <div class="info__overlay">
+                    <p class="info__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -144,23 +143,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-border">
-                  <h2 class="tile-title">Ресторан Seafood</h2>
-                  <p class="works card text">Приложение</p>
+                <div class="info__border">
+                  <h2 class="info__title works__title">Ресторан Seafood</h2>
+                  <p class="info__text works__text">Приложение</p>
                 </div></a
               >
             </li>
-            <li class="works card item">
-              <a class="works-card-link" rhef="">
-                <div class="work-card-thumb">
+            <li class="info__card info__card--width info__card--bottom">
+              <a class="info__link" href="">
+                <div class="info__thumb">
                   <img
-                    class="works-card-image"
+                    class="info__image"
                     src="./images/imgheadphones.jpg"
                     alt=""
                     width="370"
                   />
-                  <div class="work-card-overlay">
-                    <p class="word-card-overlay-text">
+                  <div class="info__overlay">
+                    <p class="info__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -168,23 +167,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-border">
-                  <h2 class="tile-title">Проект Prime</h2>
-                  <p class="works card text">Маркетинг</p>
+                <div class="info__border">
+                  <h2 class="info__title works__title">Проект Prime</h2>
+                  <p class="info__text works__text">Маркетинг</p>
                 </div></a
               >
             </li>
-            <li class="works card item">
-              <a class="works-card-link" href="">
-                <div class="work-card-thumb">
+            <li class="info__card info__card--width info__card--bottom">
+              <a class="info__link" href="">
+                <div class="info__thumb">
                   <img
-                    class="works-card-image"
+                    class="info__image"
                     src="./images/imgboxes.jpg"
                     alt=""
                     width="370"
                   />
-                  <div class="work-card-overlay">
-                    <p class="word-card-overlay-text">
+                  <div class="info__overlay">
+                    <p class="info__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -192,23 +191,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-border">
-                  <h2 class="tile-title">Проект Boxes</h2>
-                  <p class="works card text">Приложение</p>
+                <div class="info__border">
+                  <h2 class="info__title works__title">Проект Boxes</h2>
+                  <p class="info__text works__text">Приложение</p>
                 </div></a
               >
             </li>
-            <li class="works card item">
-              <a class="works-card-link" href="">
-                <div class="work-card-thumb">
+            <li class="info__card info__card--width info__card--bottom">
+              <a class="info__link" href="">
+                <div class="info__thumb">
                   <img
-                    class="works-card-image"
+                    class="info__image"
                     src="./images/imgdisplay.jpg"
                     alt=""
                     width="370"
                   />
-                  <div class="work-card-overlay">
-                    <p class="word-card-overlay-text">
+                  <div class="info__overlay">
+                    <p class="info__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -216,23 +215,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-border">
-                  <h2 class="tile-title">Inspiration has no Borders</h2>
-                  <p class="works card text">Веб-сайт</p>
+                <div class="info__border">
+                  <h2 class="info__title works__title">Inspiration has no Borders</h2>
+                  <p class="info__text works__text">Веб-сайт</p>
                 </div></a
               >
             </li>
-            <li class="works card item">
-              <a class="works-card-link" href="">
-                <div class="work-card-thumb">
+            <li class="info__card info__card--width info__card--bottom">
+              <a class="info__link" href="">
+                <div class="info__thumb">
                   <img
-                    class="works-card-image"
+                    class="info__image"
                     src="./images/imgbook.jpg"
                     alt=""
                     width="370"
                   />
-                  <div class="work-card-overlay">
-                    <p class="word-card-overlay-text">
+                  <div class="info__overlay">
+                    <p class="info__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -240,23 +239,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-border">
-                  <h2 class="tile-title">Издание Limited Edition</h2>
-                  <p class="works card text">Дизайн</p>
+                <div class="info__border">
+                  <h2 class="info__title works__title">Издание Limited Edition</h2>
+                  <p class="info__text works__text">Дизайн</p>
                 </div></a
               >
             </li>
-            <li class="works card item">
-              <a class="works-card-link" href="">
-                <div class="work-card-thumb">
+            <li class="info__card info__card--width info__card--bottom">
+              <a class="info__link" href="">
+                <div class="info__thumb">
                   <img
-                    class="works-card-image"
+                    class="info__image"
                     src="./images/imglabel.jpg"
                     alt=""
                     width="370"
                   />
-                  <div class="work-card-overlay">
-                    <p class="word-card-overlay-text">
+                  <div class="info__overlay">
+                    <p class="info__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -264,23 +263,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-border">
-                  <h2 class="tile-title">Проект LAB</h2>
-                  <p class="works card text">Маркетинг</p>
+                <div class="info__border">
+                  <h2 class="info__title works__title">Проект LAB</h2>
+                  <p class="info__text works__text">Маркетинг</p>
                 </div></a
               >
             </li>
-            <li class="works card item">
-              <a class="works-card-link" href="">
-                <div class="work-card-thumb">
+            <li class="info__card info__card--width info__card--bottom">
+              <a class="info__link" href="">
+                <div class="info__thumb">
                   <img
-                    class="works-card-image"
+                    class="info__image"
                     src="./images/imgnotebook.jpg"
                     alt=""
                     width="370"
                   />
-                  <div class="work-card-overlay">
-                    <p class="word-card-overlay-text">
+                  <div class="info__overlay">
+                    <p class="info__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -288,103 +287,103 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-border">
-                  <h2 class="tile-title">Growing Business</h2>
-                  <p class="works card text">Приложение</p>
-                </div></a
+                <div class="info__border">
+                  <h2 class="info__title works__title">Growing Business</h2>
+                  <p class="info__text works__text">Приложение</p>
+                </div></ai
               >
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer class="bttm">
-      <div class="container footer-container">
-        <div class="footer-container-adress">
-          <a class="logo link footer" href="/"
-            >Web<span class="footer-logo">Studio</span></a
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="logo-adress">
+          <a class="logo-link footer__logo-link" href="/"
+            >Web<span class="logo-link__text logo-link__text--dark">Studio</span></a
           >
-          <address class="footer-adress">
+          <address class="adress">
             г. Киев, пр-т Леси Украинки, 26
           </address>
-          <ul class="footer contacts cards">
-            <li class="footer contacts card">
-              <a class="footer-contact-link" href="mailto:info@devstudio.com"
+          <ul class="contacts contacts--column">
+            <li class="contacts__item contacts__item--column">
+              <a class="contacts__link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="footer contacts card">
-              <a class="footer-contact-link" href="tel:+380961111111"
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+380961111111"
                 >+380 96 111 11 11</a
               >
             </li>
           </ul>
         </div>
-        <div class="footer-container-socials">
-          <h3 class="footer-social-title">присоединяйтесь</h3>
-          <ul class="footer-socials-list">
-            <li class="footer-socials-item">
+        <div class="footer-socials-container">
+          <h3 class="footer-social-container__title">присоединяйтесь</h3>
+          <ul class="socials-list">
+            <li class="socials-list__item">
               <a
-                class="footer-socials-link"
+                class="socials-list__link socials-list__link--dark"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="иконка Instagram"
               >
-                <svg class="footer-socials-icon" width="20" height="20">
+                <svg class="socials-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-socials-item">
+            <li class="socials-list__item">
               <a
-                class="footer-socials-link"
+                class="socials-list__link socials-list__link--dark"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="иконка Twitter"
               >
-                <svg class="footer-socials-icon" width="20" height="20">
+                <svg class="socials-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-socials-item">
+            <li class="socials-list__item">
               <a
-                class="footer-socials-link"
+                class="socials-list__link socials-list__link--dark"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="иконка Facebook"
               >
-                <svg class="footer-socials-icon" width="20" height="20">
+                <svg class="socials-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-socials-item">
+            <li class="socials-list__item">
               <a
-                class="footer-socials-link"
+                class="socials-list__link socials-list__link--dark"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="иконка Linkedin"
               >
-                <svg class="footer-socials-icon" width="20" height="20">
+                <svg class="socials-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-container-subscription">
-          <h3 class="footer-container-subscription-title">
+        <div class="subscription">
+          <h3 class="subscription__title">
             подпишитесь на рассылку
           </h3>
           <form class="subscription-form">
-            <div class="subscription-form-field">
+            <div class="subscription-form__field">
               <input
-                class="subscription-form-input"
+                class="subscription-form__input"
                 placeholder="E-mail"
                 type="email"
                 name="mail"
@@ -392,10 +391,10 @@
               />
             </div>
            <!--  <div class="subscription-form-field"> -->
-              <button class="btn-submit footer-subscription" type="submit">
-                <span class="btn-submit-title">Подписаться </span>
+              <button class="btn btn--submit" type="submit">
+                <span class="btn__title">Подписаться&nbsp; </span>
                 <!-- <span> -->
-                  <svg class="subscription-icon" width="24" height="24">
+                  <svg class="btn__icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-send"></use>
                   </svg>
                <!--  </span> -->
